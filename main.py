@@ -16,7 +16,7 @@ show_hough_line(imgs_final, accumulator, thetas, rhos)
 test = np.uint8(imgs_final)
  
 
-lines = my_hough(imgs_final, rho=1, theta=np.pi/180, threshold=100)
+lines = my_hough(imgs_final, rho=1, theta=np.pi/180, threshold=75)
 for line in lines:
     rho, theta = line[0]
     a = np.cos(theta)
