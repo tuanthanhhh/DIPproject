@@ -1,7 +1,7 @@
 from utils import utils
 import function_detect_edge as ced
 from function_detect_line import*
-import cv2 as cv
+import cv2 as cv2
 
 imgs = utils.load_data('imgs/geometry.jpg')
 utils.visualize(imgs, 'gray')
@@ -12,7 +12,6 @@ utils.visualize(imgs_final, 'gray')
 
 accumulator, thetas, rhos = hough_line(imgs_final)
 show_hough_line(imgs_final, accumulator, thetas, rhos)
-
 
 test = np.uint8(imgs_final)
  
